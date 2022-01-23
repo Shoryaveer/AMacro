@@ -140,7 +140,7 @@ def entry():
                     if masterBreak == 1:
                         output('---stopped---')
                         return
-                    pg.typewrite(entry)
+                    pg.typewrite(entry, interval=0.2)
                     pg.press(['return'])
                     time.sleep(collection['sleep'])
         output('---end---')
